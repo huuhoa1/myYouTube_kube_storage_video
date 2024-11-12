@@ -11,7 +11,7 @@ kubectl get PersistentVolume
 #Install "nfs-subdir-external-provisioner" dynamic provisioner therough "helm". 
 helm repo add nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
 helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \
-    --set nfs.server=192.168.0.14 \
+    --set nfs.server=192.168.86.30 \
     --set nfs.path=/export/volumes/dynamic
 
     #To uninstall "nfs-subdir-external-provisioner"
